@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Fork 独立功能 1：只读记忆查看 — 2026-11-17
+
+- core-memory 新增同源只读接口 `lib/inspector.js`，从现有归档文件读取实际元数据；无写入、模型调用、定时轮询或新数据库。拒绝写请求，已删除记录不展示。
+- `lib/client.js` 新增设置项“记忆查看”：标题/标签/编号筛选、状态筛选、每页 25 条、原文与替代/合并关系跳转、未知来源和读取失败提示。原文按纯文本显示。
+- `node dsh-ming-core-memory/qa-inspector.mjs` 与 `qa-recovery.mjs` 通过；本地 React + Edge 实际点击、筛选、关系跳转、文本转义与 390 像素窄屏检查通过，无页面异常。宿主部分使用替代环境，未在朋友 DSH 安装验收。
+- 保留 A、核心 3000 字符、12 个标题、原有记忆写入政策。这个功能不提供修改、隔离或全链路遗忘；来源标签不等于事实已被证实。详见 [INSPECTOR.md](dsh-ming-core-memory/INSPECTOR.md)。
+
 ## Fork 试用补丁：B/C/D — 2026-11-17
 
 基于上游 1.1.1，不占用上游正式版本号。代码提交 `fe297ea`，本节补齐此前遗漏的主 README / CHANGELOG 记录。
