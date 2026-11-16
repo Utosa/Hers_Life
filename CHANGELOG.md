@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Fork 独立轮次 G：B 站 ESM 加载 — 2026-11-17
+
+- 修改 `dsh-ming-bilibili-account/index.js` 与 `lib/social.js` 的 path/os 引用，消除原生 ESM 下的 require 错误。
+- 新增 `qa-load.mjs`，在临时副本中加载完整模块并验证搜索、抽帧、登录、社交工具注册，只有宿主包使用替身。原代码复现 require 错误，修后通过。
+- `node dsh-ming-bilibili-account/qa-load.mjs` 与 `node dsh-ming-bilibili-account/reliability.test.mjs` 通过。未访问真实 B 站账号；不宣称已解决登录态分裂或宿主版本兼容问题。
+
 ## Fork 试用补丁：B/C/D — 2026-11-17
 
 基于上游 1.1.1，不占用上游正式版本号。代码提交 `fe297ea`，本节补齐此前遗漏的主 README / CHANGELOG 记录。
