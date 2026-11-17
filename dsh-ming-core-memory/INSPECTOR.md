@@ -1,5 +1,7 @@
 # 只读记忆查看
 
+> 本页属于此前试用分支。当前可独立合入的版本见 [PR #7](https://github.com/Chess12333/Hers_Life/pull/7)，不要求先合 B/C/D。以下旧分支自身的基线说明只用于追溯。
+
 本功能位于 `feat/memory-inspector`，基于 B/C/D 补丁；不要求采用其他独立修复或活动插件。
 
 ## 怎么使用
