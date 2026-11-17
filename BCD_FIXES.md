@@ -1,5 +1,7 @@
 # B C D 修复说明
 
+> 本页保留原捆绑补丁的范围与测试记录。当前 B/C/D 已分别提交为 [PR #1](https://github.com/Chess12333/Hers_Life/pull/1)、[PR #2](https://github.com/Chess12333/Hers_Life/pull/2)、[PR #3](https://github.com/Chess12333/Hers_Life/pull/3)，可独立选择；全部入口见 [交付总览](DELIVERY_2026-11-17.md)。
+
 2026 年 11 月 17 日。基于公开仓库提交 `05c927dda8486c1b4e32b065f71033246ced0e24`，修复分支 `fix/bcd-memory-wake-resume`。
 
 ## 用日常语言说明改了什么
