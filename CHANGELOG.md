@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## PR 交付更新 — 2026-11-17
+
+- B/C/D 拆为 3 个 PR，加上 G/J/K 和两个功能，共 8 个独立 PR。当前入口见 [交付总览](DELIVERY_2026-11-17.md)。
+- 原分支运行代码保留，仅更新交付文档；新 pr 分支各自基于上游 main，不要求先合 B/C/D。维护者决定是否合并。
+
 ## Fork 独立轮次 G：B 站 ESM 加载 — 2026-11-17
 
 - 修改 `dsh-ming-bilibili-account/index.js` 与 `lib/social.js` 的 path/os 引用，消除原生 ESM 下的 require 错误。
